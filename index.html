@@ -4,56 +4,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ぺてんと ネット詐欺・ウイルスシミュレーション</title>
+  <title>ぺてんと ネット詐欺シミュレーション</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <header class="site-header">
-    <div class="logo">ぺてんと シミュレーション</div>
+    <div class="logo">
+      <!-- 将来的に画像にする場合は下記を <img> に差し替えます -->
+      <span>ぺてんと シミュレーション</span>
+    </div>
     <nav class="nav-links">
-        <a href="#">ホーム</a>
-        <a href="#">使い方</a>
-        <a href="#">お問い合わせ</a>
+      <a href="#">ホーム</a>
+      <a href="#">使い方</a>
+      <a href="#">お問い合わせ</a>
     </nav>
   </header>
 
   <main class="container">
-    <h1 class="page-title">体験する詐欺の種類を選ぶ</h1>
+    <h1 class="page-title">体験する</h1>
 
-    <!-- 詐欺体験カード -->
+    <!-- 詐欺体験カードエリア -->
     <div class="card-grid">
 
-        <!-- フィッシング -->
-         <div class="scam-card">
-            <div class="card-icon">💳</div>
-            <h2>フィッシング詐欺</h2>
-            <div class="card-hover-desc">
-                <p>偽のメールやSMSから偽サイトに誘導し、個人情報を入力させる手口を体験します。</p>
-            </div>
-            <button class="btn-primary">体験する</button>
-         </div>
-
-        <!-- 偽セキュリティ警告 -->
-        <div class="scam-card">
-            <div class="card-icon">⚠️</div>
-            <h2>偽セキュリティ警告</h2>
-            <div class="card-hover-desc">
-                <p>「ウイルスに感染しました」という画面と警告音で焦らせる手口を体験します。</p>
-            </div>
-            <button class="btn-primary">体験する</button>
+      <!-- フィッシング -->
+      <a href="phishing.html" class="scam-card">
+        <div class="card-content">
+          <!-- 絵文字から画像に差し替える際は <img> を使用します -->
+          <div class="card-icon">💳</div>
+          <h2>フィッシング</h2>
         </div>
-
-        <!-- 偽懸賞 -->
-        <div class="scam-card">
-            <div class="card-icon">🎁</div>
-            <h2>偽懸賞・当選詐欺</h2>
-            <div class="card-hover-desc">
-                <p>「豪華賞品が当たった」と見せかけて、不審な登録サイトに誘導する手口を体験します。</p>
-            </div>
-            <button class="btn-primary">体験する</button>
+        <div class="card-hover-overlay">
+          <p>偽のメールやSMSから偽サイトに誘導し、個人情報を入力させる手口を体験します。</p>
         </div>
+      </a>
+
+      <!-- 偽セキュリティ警告 -->
+      <a href="warning.html" class="scam-card">
+        <div class="card-content">
+          <div class="card-icon">⚠️</div>
+          <h2>偽セキュリティ警告</h2>
+        </div>
+        <div class="card-hover-overlay">
+          <p>「ウイルスに感染しました」という画面と警告音で焦らせる手口を体験します。</p>
+        </div>
+      </a>
+
+      <!-- 偽懸賞 -->
+      <a href="sweepstakes.html" class="scam-card">
+        <div class="card-content">
+          <div class="card-icon">🎁</div>
+          <h2>偽懸賞・当選</h2>
+        </div>
+        <div class="card-hover-overlay">
+          <p>「豪華賞品が当たった」と見せかけて、不審な登録サイトに誘導する手口を体験します。</p>
+        </div>
+      </a>
 
     </div>
 
@@ -66,4 +73,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
